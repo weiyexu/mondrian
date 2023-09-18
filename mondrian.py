@@ -29,7 +29,7 @@ def drawRectangle(x1, y1, x2, y2, t):
     t.end_fill()
 
 def mondrian(x1, y1, x2, y2, level, t):
-    #Draws a Mondrian-like painting at the given level
+    #Draws rectangle at level 0, other wise call itself recursively
     if level ==  0:
         drawRectangle(x1, y1, x2, y2, t)
         return
