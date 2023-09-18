@@ -37,7 +37,7 @@ def mondrian(x1, y1, x2, y2, level, t):
     vertical = (x2 - x1) > (y2 - y1)
     #split at 0.2 - 0.8 ratio
     splitFactor = randint(2, 8) / 10
-    if vertical == 1:              
+    if vertical:              
        mondrian(x1, y1, (x2 - x1) * splitFactor + x1, y2, level - 1, t)
        mondrian((x2 - x1) * splitFactor + x1, y1, x2, y2, level - 1, t)
     else:
