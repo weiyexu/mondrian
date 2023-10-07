@@ -7,10 +7,12 @@ HEIGHT = 480
 def randomColor():
     #returns a random color
      rv = random()
-     if rv < 0.1:
+     if rv < 0.2:
        return "black"
-     elif rv < 0.4:
+     elif rv < 0.5:
        return "red"
+     elif rv < 0.8:
+       return "yellow" 
      else:
        return "white"
 
